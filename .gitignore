@@ -1,0 +1,16 @@
+# Visual Studio related ignores
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.pdb
+*.dbmdl
+*.bak
+*.zip
+
+# NuGet packages
+*.nupkg
+packages/
