@@ -1,0 +1,182 @@
+.productlist-wrapper {
+    border: 2px dash blue; /* Dashed blue border */
+    width: 100%;
+    max-width: 100%;
+    padding: 20px; /* Space around the content */
+    display: flex; /* Allow content to fill the container */
+    flex-direction: column; /* Keeps everything in a column layout */
+    
+  }
+  
+  .productlist-container {
+    position: relative; /* Position relative to the parent */
+    width: 100%; /* Full width of the parent container */
+   flex: 1; /* Allow the container to grow and fill the space */
+    background-color: transparent;
+    max-width: 100%; /* Full width of the parent container */
+    margin-top: 1rem; /* Space above the container */
+  }
+
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 16px;
+    width: 100%;                /* Ensure grid spans full width */
+  }
+  
+  /* Rest of your styles remain unchanged */
+  
+  .productlist-header {
+    display: flex;
+    align-items: left;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .add-product-button {
+    background-color: #10B981;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-product-button:hover {
+    background-color: #10B981;
+  }
+  
+  .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827; /* Slightly deeper charcoal */
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+  padding-left: 0.5rem;
+
+  /* Decorative underline effect */
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0.5rem;
+    width: 60px;
+    height: 3px;
+    background-color: #2563eb; /* Tailwind blue-600 */
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  /* Slight hover interaction (optional) */
+  &:hover::after {
+    width: 80px;
+  }
+
+  transition: all 0.3s ease;
+}
+
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-item {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .category-item:hover {
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.12);
+    background-color: #f9fafb;
+  }
+  
+  .category-item:active {
+    transform: scale(0.97);
+  }
+  
+  .category-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .category-name {
+    font-size: 16px;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  .empty-state {
+    color: #6b7280;
+    font-size: 16px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .productlist-wrapper {
+      padding: 0 5vw;
+    }
+  
+    .productlist-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .section-title {
+      font-size: 20px;
+    }
+  
+    .product-grid {
+      gap: 16px;
+    }
+  
+    .add-product-button {
+      padding: 8px 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .productlist-wrapper {
+      padding: 0 5vw;
+    }
+  
+    .section-title {
+      font-size: 18px;
+    }
+  
+    .category-item {
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .product-grid {
+      gap: 12px;
+    }
+  }
+  .container {
+    width: 100%; /* Full width */
+    max-width: none; 
+  }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+  
