@@ -1,10 +1,10 @@
 ## Screenshots
 
 ### Git Login Screen  
-![Git Login](src/assets/Images/git-login.png)
+![Git Login](frontend/src/assets/Images/git-login.png)
 
 ### Github Picture  
-![Github Pic](src/assets/Images/github-pic.png)
+![Github Pic](frontend/src/assets/Images/github-pic.png)
 
 ### Products Page  
-![Products](src/assets/Images/products.png)
+![Products](frontend/src/assets/Images/products.png)
